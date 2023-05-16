@@ -10,7 +10,8 @@ export class Player extends Actor {
     onInitialize(_engine) {
         super.onInitialize(_engine);
         this.graphics.use(Resources.Rokkett.toSprite())
-        this.pos = new Vector(100,300)
+        this.pos = new Vector(200,100)
+        this.vel = new Vector(0, 100)
     }
 
     onPostUpdate(_engine, _delta) {
